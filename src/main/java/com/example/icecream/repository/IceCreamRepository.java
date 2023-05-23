@@ -1,2 +1,4 @@
-package com.example.icecream.repository;public interface IceCreamRepository {
+package com.example.icecream.repository;
+
+public interface IceCreamRepository {
 }
