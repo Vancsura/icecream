@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
 import './css/navbar.css'
+import './css/normalize.css'
+import './css/shops.css'
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,5 +16,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-reportWebVitals();

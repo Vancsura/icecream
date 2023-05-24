@@ -1,13 +1,13 @@
 import React from 'react';
 import './css/App.css';
-
-import { Button } from 'react-bootstrap';
 import Navbar from "./Navbar";
+import Shops from "./Shops";
 
 function App() {
   return (
       <div>
           <Navbar />
+          <Shops />
       </div>
   );
 }
