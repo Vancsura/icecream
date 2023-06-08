@@ -1,13 +1,15 @@
 import React from 'react';
 import './css/App.css';
-import Navbar from "./Navbar";
-import Shops from "./Shops";
+import Navbar from "./components/Navbar";
+import Shop from "./components/Shop";
+import Footer from "./components/Footer";
 
 function App() {
   return (
       <div>
           <Navbar />
-          <Shops />
+          <Shop />
+          <Footer />
       </div>
   );
 }
