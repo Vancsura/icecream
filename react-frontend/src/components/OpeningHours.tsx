@@ -1,4 +1,4 @@
-export default function OpeningHoursBaja() {
+export default function OpeningHours() {
     return (
 
         <div className="section-2-container section-container section-container-gray-bg">
