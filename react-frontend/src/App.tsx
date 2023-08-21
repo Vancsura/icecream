@@ -24,9 +24,6 @@ function App() {
               </Routes>
 
           </BrowserRouter>
-          {/*<div className="w-100">*/}
-          {/*    <Shop />*/}
-          {/*</div>*/}
           <Footer />
       </>
 

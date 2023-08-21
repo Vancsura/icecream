@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 @AllArgsConstructor
 public class IceCreamController {
 
-    private static final Logger logger = (Logger) LoggerFactory.getLogger(IceCreamController.class);
+//    private static final Logger logger = (Logger) LoggerFactory.getLogger(IceCreamController.class);
 
 
 }
