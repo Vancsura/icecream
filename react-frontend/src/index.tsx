@@ -5,6 +5,8 @@ import './css/navbar.css'
 import './css/normalize.css'
 import './css/shop.css'
 import './css/footer.css'
+import './css/openingHours.css'
+import './css/order.css'
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

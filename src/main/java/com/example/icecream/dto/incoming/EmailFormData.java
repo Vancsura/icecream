@@ -12,9 +12,9 @@ public class EmailFormData {
 
     @NotBlank
     @NotNull
-    @Size(max = 50)
+    @Size(min = 5, max = 50)
     private String from;
     private String text;
-    private final String to = "sill_fagyizo@gmail.com";
+    private final String to = "valaci1992@gmail.com";
     private final String subject = "Rendelés";
 }

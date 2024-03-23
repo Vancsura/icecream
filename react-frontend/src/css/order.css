@@ -1,0 +1,25 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightsalmon;
+}
+
+.leftStick, .rightStick {
+    width: 20%;
+    background-color: #333;
+    height: 100vh;
+}
+
+.center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,12 +1,10 @@
-export default function OpeningHours() {
+export default function Order() {
     return (
 
         <div className="wrap">
-            <div className="leftStick">
-            </div>
+            <div className="leftStick" ></div>
             <div className="center">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                     labore et.
                     Ut wisi enim ad minim veniam, quis nostrud.
                     Exerci tation ullamcorper suscipit <a href="#">lobortis nisl</a> ut aliquip ex ea commodo
@@ -15,8 +13,6 @@ export default function OpeningHours() {
                 </p>
             </div>
             <div className="rightStick"></div>
-
         </div>
-
     )
 }
