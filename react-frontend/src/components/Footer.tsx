@@ -7,7 +7,7 @@ export default function App() {
 
         <footer className="footer fixed-bottom">
             <div>
-                <span>Sill fagyizó &copy; 2023 Produced by: Vancsura László</span>
+                <span>Sill fagyizó &copy; 2006</span>
             </div>
         </footer>
 

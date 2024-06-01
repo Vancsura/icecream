@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    background-color: green;
+    width: 10%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.open-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.open {
+    text-align: center;
+    padding-top: 20%;
+}

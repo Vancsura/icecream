@@ -14,6 +14,9 @@ export default function Navbar() {
                     <img src="https://picsum.photos/800" alt="Nem ez kell"/>
                 </Link>
                 <ul>
+                        <CustomLink className="nav-link mx-6" to="/order">Elérhetőség</CustomLink>
+                </ul>
+                <ul>
                         <CustomLink className="nav-link mx-6" to="/order">Rendelés</CustomLink>
                 </ul>
             </div>

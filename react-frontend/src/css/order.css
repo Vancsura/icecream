@@ -1,0 +1,14 @@
+
+
+.order-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.order {
+    text-align: center;
+    padding-top: 30%;
+}
