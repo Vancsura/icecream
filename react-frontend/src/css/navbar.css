@@ -9,8 +9,8 @@ body {
 }
 
 .navbar {
-    background-color: #65350F;
-    color: white;
+    background-color: #E5D3B3;
+    color: black;
     height: 50px;
 }
 
@@ -78,6 +78,7 @@ nav > div > ul > li:hover ul {
 .navbar-brand {
     width: 100px;
     height: 100px;
+    right: 0.5em;
     top: 2em;
     background: none;
     border: none;
@@ -129,7 +130,7 @@ nav > div > ul > li:hover ul {
 .navbar-brand > img {
     border-radius: 50%;
     position: relative;
-    right: 1px;
+    right: 2px;
     bottom: 6px;
     width: 102.5px;
 }

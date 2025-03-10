@@ -26,11 +26,15 @@
     top: 0;
     left: 0;
     transition: 0.25s ease all;
+    z-index: 2;
+    position: relative;
+    filter: brightness(0.7);
 }
 
 .wrapper .left:hover .image,
 .wrapper .right:hover .image {
     transform: scale(1.2);
+    filter: brightness(1.0);
 }
 
 .wrapper .side::before {

@@ -1,27 +1,28 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 // @ts-ignore
-import dog from '../css/img/dog.jpg'
+import shop_baja from '../css/img/baja_shop_city.jpg'
 // @ts-ignore
-import cat from '../css/img/cat.jpg'
+import shop_csanad from '../css/img/csanad_shop_village.jpg'
 
 export default function Shop() {
-
     return (
 
         <div className="wrapper">
-
             <div className="side left">
-                <div className="image">
-                    <img className="img-fluid px-0 mx-0" src={dog} alt="It would be a dog"/>
-                </div>
+                <Link to="/shop_baja" className="image">
+                    <img
+                        className="img-fluid px-0 mx-0"
+                        src={shop_baja} alt="It would be a dog"/>
+                </Link>
             </div>
             <div className="side right">
-                <div className="image">
-                    <img className="img-fluid px-0 mx-0" src={cat} alt="It would be a cat"/>
-                </div>
+                <Link to="/shop_ersekcsanad" className="image">
+                    <img className="img-fluid px-0 mx-0" src={shop_csanad} alt="It would be a cat"/>
+                </Link>
             </div>
 
         </div>
 
     )
 }
-

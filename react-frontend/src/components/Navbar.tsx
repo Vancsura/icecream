@@ -1,23 +1,20 @@
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+// @ts-ignore
+import logo from '../css/img/csanad_logo.jpg'
 
 export default function Navbar() {
 
     return (
         <nav className="navbar fixed-top navbar-expand-md">
-
             <div className="container">
                 <ul>
-                        <CustomLink className="nav-link" to="/opening_hours">Nyitvatartás</CustomLink>
+                    <CustomLink className="nav-link" to="/opening_hours">Nyitvatartás</CustomLink>
                 </ul>
-
                 <Link to="/" className="navbar-brand mx-auto order-0">
-                    <img src="https://picsum.photos/800" alt="Nem ez kell"/>
+                    <img src={logo} alt="Sill logo"/>
                 </Link>
                 <ul>
-                        <CustomLink className="nav-link mx-6" to="/order">Elérhetőség</CustomLink>
-                </ul>
-                <ul>
-                        <CustomLink className="nav-link mx-6" to="/order">Rendelés</CustomLink>
+                    <CustomLink className="nav-link mx-6" to="/order">Rendelés</CustomLink>
                 </ul>
             </div>
         </nav>
