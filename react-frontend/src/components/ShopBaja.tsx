@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import BajaCarousel from './BajaCarousel'; // Importáljuk be a Carousel komponenst
+import BajaCarousel from './BajaCarousel';
 
 
 export default function ShopBaja() {

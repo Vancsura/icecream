@@ -13,6 +13,7 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 
 .wrapper .image {
@@ -29,6 +30,13 @@
     z-index: 2;
     position: relative;
     filter: brightness(0.7);
+}
+
+.wrapper .city {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
 }
 
 .wrapper .left:hover .image,

@@ -73,6 +73,7 @@ nav > div > ul > li:hover ul {
 .nav-link {
     color: white;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .navbar-brand {
