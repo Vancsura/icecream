@@ -6,10 +6,9 @@ import baja4 from '../css/img/baja (5).jpg'
 
 const CsanadCarousel = () => {
   return (
-    <Carousel fade style={{ width: '100%', height: '100%' }}>
+    <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100 h-100"
           src={baja4}
           alt="Second slide"
         />
@@ -18,7 +17,6 @@ const CsanadCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 h-100"
           src={baja2}
           alt="Third slide"
         />
@@ -27,7 +25,6 @@ const CsanadCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
           src={baja3}
           alt="Third slide"
         />

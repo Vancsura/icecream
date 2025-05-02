@@ -1,16 +1,19 @@
 import CsanadCarousel from './CsanadCarousel'
-import Carousel from 'react-bootstrap/Carousel';
 
 
 export default function ShopErsekcsanad(){
     return (
-            <div>
+            <div className="shop-container">
+              <div className="carousel-container">
                 <CsanadCarousel />
                 <div>
                   <section id="section05" className="demo">
-                    <a href=""><span></span></a>
+                    <a href="#section01">
+                      <span>↓</span>
+                    </a>
                   </section>
                 </div>
+              </div>
             </div>
         )
 }

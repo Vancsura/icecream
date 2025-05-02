@@ -11,7 +11,7 @@ export default function Navbar() {
                     <CustomLink className="nav-link" to="/opening_hours">Nyitvatartás</CustomLink>
                 </ul>
                 <Link to="/" className="navbar-brand mx-auto order-0">
-                    <img src={logo} alt="Sill logo"/>
+                    <img src={logo} alt="Sill logo" />
                 </Link>
                 <ul>
                     <CustomLink className="nav-link mx-6" to="/order">Rendelés</CustomLink>
