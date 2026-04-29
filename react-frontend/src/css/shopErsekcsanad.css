@@ -1,0 +1,243 @@
+.ersekcsanad-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.ersekcsanad-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: blur(8px) brightness(1.2) opacity(0.7);
+  transform: scale(1);
+  animation: slowZoom 30s ease-in-out infinite;
+}
+
+.ersekcsanad-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+
+  min-height: 100vh;
+  padding: 120px 20px 60px;
+}
+
+.ersekcsanad-inner {
+  width: 100%;
+  max-width: 1200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.first-text,
+.ersekcsanad-carousel {
+  width: 80%;
+  max-width: 960px;
+}
+
+.ersekcsanad-carousel {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.ersekcsanad-carousel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.first-text {
+  margin-top: 20px;
+  position: relative;
+  padding: 20px;
+  letter-spacing: 1px;
+  color: #111;
+  margin-bottom: 20px;
+  background-color: #d4f4cd;
+  text-align: center;
+  border-radius: 30px 0 30px 0;
+  overflow: visible;
+  max-width: none;
+  max-height: 286px;
+}
+
+p {
+  font-family: "Amatic SC", cursive;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #333;
+  padding: 15px;
+}
+
+.first-text h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.second-text {
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 80%;
+  max-width: 960px;
+  background-color: #f4c6a5;
+  padding: 10px;
+  border-radius: 30px 0 30px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.flavours-slider {
+  overflow: hidden;
+  width: 80%;
+  cursor: default;
+}
+
+.flavours-track {
+  display: flex;
+  gap: 24px;
+  will-change: transform;
+  padding: 20px 0;
+}
+
+.flavour-card {
+  width: 260px;
+  height: 360px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  margin-top: 10px;
+  padding: 20px;
+
+  border-radius: 30px;
+
+  position: relative;
+  overflow: hidden;
+
+  color: #fff;
+  background-size: 130%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-shadow:
+    inset -10px -10px 20px rgba(0,0,0,0.2),
+    inset 10px 10px 20px rgba(255,255,255,0.3),
+    0 10px 25px rgba(0,0,0,0.4);
+
+  transition: all 0.35s ease;
+}
+
+.flavour-card * {
+  position: relative;
+  z-index: 1;
+}
+
+.flavour-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.flavour-card h3 {
+  background: rgba(0,0,0,0.5);
+  padding: 8px 14px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+
+  font-family: 'Amatic SC', cursive;
+  font-size: 28px;
+}
+
+.flavour-card:hover {
+  transform: scale(1.1) translateY(-10px);
+  z-index: 5;
+  filter: brightness(1.5);
+}
+
+.flavour-card:hover ~ .flavour-card {
+  transform: translateX(20px);
+}
+
+.pastel {
+  background-color: #f4c6a5;
+}
+
+.apple {
+  background-color: #d4f4cd;
+}
+
+.choco {
+  background-color: #6b3e26;
+}
+
+.berry {
+  background-color: #d36ba6;
+}
+
+@keyframes slowZoom {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .ersekcsanad-content {
+    padding: 90px 15px;
+  }
+
+  .first-text,
+  .ersekcsanad-carousel {
+    width: 100%;
+  }
+
+  .first-text {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 20px 0 20px 0;
+    max-height: none;
+  }
+
+  .flavours-slider {
+    overflow: visible;
+  }
+
+  .flavours-track {
+    flex-direction: column;
+    align-items: center;
+    transform: none !important;
+  }
+
+  .flavour-card {
+    width: 90%;
+    max-width: 320px;
+    max-height: 320px;
+  }
+}

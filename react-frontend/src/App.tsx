@@ -10,7 +10,6 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import ShopBaja from "./components/ShopBaja";
 import ShopErsekcsanad from "./components/ShopErsekcsanad";
 import OpeningHours from "./components/OpeningHours";
-import Order from "./components/Order";
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
                   <Route path="/shop_baja" element={<ShopBaja />}/>
                   <Route path="/shop_ersekcsanad" element={<ShopErsekcsanad />}/>
                   <Route path="/opening_hours" element={<OpeningHours />}/>
-                  <Route path="*" element={<Order />}/>
               </Routes>
           </Router>
           <Footer />
