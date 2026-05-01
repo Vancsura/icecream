@@ -4,7 +4,6 @@ import './css/index.css';
 import './css/navbar.css';
 import './css/shop.css';
 import './css/footer.css';
-import './css/openingHours.css';
 import './css/ShopBaja.css';
 import './css/shopErsekcsanad.css';
 import App from './App';

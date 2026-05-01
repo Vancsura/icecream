@@ -26,6 +26,8 @@ import sarkany from '../css/img/sarkany.jpg';
 import malnas from '../css/img/malnas-mag.jpg';
 //@ts-ignore
 import mak from '../css/img/mak.jpg';
+//@ts-ignore
+import chocoball from '../css/img/chocoball.jpeg';
 import '../css/shopErsekcsanad.css';
 
 export default function ShopErsekcsanad() {
@@ -188,7 +190,7 @@ export default function ShopErsekcsanad() {
         <div className="scoop scoop-pink"></div>
         <div className="scoop scoop-vanilla"></div>
         <div className="scoop scoop-choco"></div>
-        <div className="scoop scoop-green"></div>
+        <div className="scoop scoop-green" style={{ backgroundImage: `url(${chocoball})` }}></div>
         <div className="scoop scoop-berry"></div>
       </div>
     </div>

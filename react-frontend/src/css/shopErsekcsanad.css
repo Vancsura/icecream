@@ -74,7 +74,7 @@
 }
 
 p {
-  font-family: "Amatic SC", cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -83,13 +83,12 @@ p {
 }
 
 .first-text h1 {
-  font-family: "Amatic SC", cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 56px;
-  font-weight: bold;
 }
 
 .second-text {
-  font-family: "Amatic SC", cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -222,7 +221,6 @@ p {
 .scoop-green {
   right: 120px;
   bottom: -45px;
-  background: #a8d8a2;
 }
 
 .scoop-berry {
