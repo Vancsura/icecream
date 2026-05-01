@@ -124,66 +124,73 @@ export default function ShopErsekcsanad() {
 
       <div className="ersekcsanad-content">
         <div className="ersekcsanad-inner">
-            
-            <div className="first-text">
-              <h1>Köszöntünk a Sill fagyizó weboldalán.</h1>
-              <p>
-                Az idei évben is új ízekkel és változatos kínálattal várunk minden
-                kedves vendéget!
-                Fagylaltjainkkal már Baján, Érsekcsanádon, Vaskúton, Sükösdön és Dusnokon is találkozhattok!
-              </p>
-            </div>
 
-            <div className="ersekcsanad-carousel">
-              <CsanadCarousel />
-            </div>
+          <div className="first-text">
+            <h1>Köszöntünk a Sill fagyizó weboldalán.</h1>
+            <p>
+              Az idei évben is új ízekkel és változatos kínálattal várunk minden
+              kedves vendéget!
+              Fagylaltjainkkal már Baján, Érsekcsanádon, Vaskúton, Sükösdön és Dusnokon is találkozhattok!
+            </p>
+          </div>
 
-            <div className="second-text mt-4">
-              Újdonságainkat és régi kedvenceiket is megtalálják a pultban!
-            </div>
+          <div className="ersekcsanad-carousel">
+            <CsanadCarousel />
+          </div>
 
-            <div className="flavours-slider" ref={sliderRef}>
-              <div className="flavours-track" ref={trackRef}>
-                <div className="flavour-card pastel" style={{ backgroundImage: `url(${pastel})` }}>
-                  <h3>Pastel de nata</h3>
-                </div>
-                <div className="flavour-card apple" style={{backgroundImage: `url(${almas})` }}>
-                  <h3>Almáspite</h3>
-                </div>
-                <div className="flavour-card cherry" style={{ backgroundImage: `url(${mak})` }}>
-                  <h3>Meggyes-mákos</h3>
-                </div>
-                <div className="flavour-card choco" style={{ backgroundImage: `url(${pokemon})` }}>
-                  <h3>Pokemon</h3>
-                </div>
-                <div className="flavour-card choco" style={{ backgroundImage: `url(${erdei})` }}>
-                  <h3>Tejszínes-erdeigyümölcsös</h3>
-                </div>
-                <div className="flavour-card choco" style={{ backgroundImage: `url(${raffa})` }}>
-                  <h3>Raffaello</h3>
-                </div>
-                <div className="flavour-card choco" style={{ backgroundImage: `url(${snickers})` }}>
-                  <h3>Snickers</h3>
-                </div>
-                <div className="flavour-card choco" style={{ backgroundImage: `url(${kinder})` }}>
-                  <h3>Kinder bueno</h3>
-                </div>
-                <div className="flavour-card choco" style={{ backgroundImage: `url(${csokis_k})` }}>
-                  <h3>Csokis keksz</h3>
-                </div>
-                <div className="flavour-card choco" style={{ backgroundImage: `url(${dubai})` }}>
-                  <h3>Dubai csokis</h3>
-                </div>
-                <div className="flavour-card choco" style={{ backgroundImage: `url(${malnas})` }}>
-                  <h3>Málnás magnum</h3>
-                </div>
-                <div className="flavour-card choco" style={{ backgroundImage: `url(${sarkany})` }}>
-                  <h3>Sárkánygyümölcs</h3>
-                </div>
+          <div className="second-text mt-4">
+            Újdonságainkat és régi kedvenceiket is megtalálják a pultban!
+          </div>
+
+          <div className="flavours-slider" ref={sliderRef}>
+            <div className="flavours-track" ref={trackRef}>
+              <div className="flavour-card pastel" style={{ backgroundImage: `url(${pastel})` }}>
+                <h3>Pastel de nata</h3>
+              </div>
+              <div className="flavour-card apple" style={{ backgroundImage: `url(${almas})` }}>
+                <h3>Almáspite</h3>
+              </div>
+              <div className="flavour-card cherry" style={{ backgroundImage: `url(${mak})` }}>
+                <h3>Meggyes-mákos</h3>
+              </div>
+              <div className="flavour-card choco" style={{ backgroundImage: `url(${pokemon})` }}>
+                <h3>Pokemon</h3>
+              </div>
+              <div className="flavour-card choco" style={{ backgroundImage: `url(${erdei})` }}>
+                <h3>Tejszínes-erdeigyümölcsös</h3>
+              </div>
+              <div className="flavour-card choco" style={{ backgroundImage: `url(${raffa})` }}>
+                <h3>Raffaello</h3>
+              </div>
+              <div className="flavour-card choco" style={{ backgroundImage: `url(${snickers})` }}>
+                <h3>Snickers</h3>
+              </div>
+              <div className="flavour-card choco" style={{ backgroundImage: `url(${kinder})` }}>
+                <h3>Kinder bueno</h3>
+              </div>
+              <div className="flavour-card choco" style={{ backgroundImage: `url(${csokis_k})` }}>
+                <h3>Csokis keksz</h3>
+              </div>
+              <div className="flavour-card choco" style={{ backgroundImage: `url(${dubai})` }}>
+                <h3>Dubai csokis</h3>
+              </div>
+              <div className="flavour-card choco" style={{ backgroundImage: `url(${malnas})` }}>
+                <h3>Málnás magnum</h3>
+              </div>
+              <div className="flavour-card choco" style={{ backgroundImage: `url(${sarkany})` }}>
+                <h3>Sárkánygyümölcs</h3>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div className="icecream-scoops">
+        <div className="scoop scoop-pink"></div>
+        <div className="scoop scoop-vanilla"></div>
+        <div className="scoop scoop-choco"></div>
+        <div className="scoop scoop-green"></div>
+        <div className="scoop scoop-berry"></div>
+      </div>
+    </div>
   );
 }
