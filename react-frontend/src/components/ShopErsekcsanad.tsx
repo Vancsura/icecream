@@ -28,6 +28,14 @@ import malnas from '../css/img/malnas-mag.jpg';
 import mak from '../css/img/mak.jpg';
 //@ts-ignore
 import chocoball from '../css/img/chocoball.jpeg';
+//@ts-ignore
+import dubai_g from '../css/img/dubai-c.jpg';
+//@ts-ignore
+import pokemon_g from '../css/img/pokemon-g.jpg';
+//@ts-ignore
+import vanilla from '../css/img/vanilla.jpg';
+//@ts-ignore
+import berry from '../css/img/berry.jpg';
 import '../css/shopErsekcsanad.css';
 
 export default function ShopErsekcsanad() {
@@ -126,18 +134,20 @@ export default function ShopErsekcsanad() {
 
       <div className="ersekcsanad-content">
         <div className="ersekcsanad-inner">
+          <div className="hero">
 
-          <div className="first-text">
-            <h1>Köszöntünk a Sill fagyizó weboldalán.</h1>
-            <p>
-              Az idei évben is új ízekkel és változatos kínálattal várunk minden
-              kedves vendéget!
-              Fagylaltjainkkal már Baján, Érsekcsanádon, Vaskúton, Sükösdön és Dusnokon is találkozhattok!
-            </p>
-          </div>
+            <div className="first-text">
+              <h1>Köszöntünk a Sill fagyizó weboldalán.</h1>
+              <p>
+                Az idei évben is új ízekkel és változatos kínálattal várunk minden
+                kedves vendéget!
+                Fagylaltjainkkal már Baján, Érsekcsanádon, Vaskúton, Sükösdön és Dusnokon is találkozhattok!
+              </p>
+            </div>
 
-          <div className="ersekcsanad-carousel">
-            <CsanadCarousel />
+            <div className="ersekcsanad-carousel">
+              <CsanadCarousel />
+            </div>
           </div>
 
           <div className="second-text mt-4">
@@ -184,14 +194,43 @@ export default function ShopErsekcsanad() {
               </div>
             </div>
           </div>
+          <div className="info-section">
+
+            <div className="info-block">
+              <div className="info-image">
+                <img src={bgImage} alt="Fagyizó" />
+              </div>
+
+              <div className="info-text">
+                <h2>Érsekcsanádi üzlet</h2>
+                <p><strong>H-P:</strong> 10:00 – 20:00</p>
+                <p><strong>Szo:</strong> 10:00 – 21:00</p>
+                <p><strong>V:</strong> 10:00 – 19:00</p>
+              </div>
+            </div>
+
+            <div className="info-block reverse">
+              <div className="info-image">
+                <img src={bgImage} alt="Fagyizó" />
+              </div>
+
+              <div className="info-text">
+                <h2>Bajai üzlet</h2>
+                <p><strong>H-P:</strong> 09:00 – 19:00</p>
+                <p><strong>Szo:</strong> 10:00 – 20:00</p>
+                <p><strong>V:</strong> 10:00 – 18:00</p>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
       <div className="icecream-scoops">
-        <div className="scoop scoop-pink"></div>
-        <div className="scoop scoop-vanilla"></div>
-        <div className="scoop scoop-choco"></div>
+        <div className="scoop scoop-pink" style={{ backgroundImage: `url(${berry})` }}></div>
+        <div className="scoop scoop-vanilla" style={{ backgroundImage: `url(${dubai_g})` }}></div>
+        <div className="scoop scoop-choco" style={{ backgroundImage: `url(${pokemon_g})` }}></div>
         <div className="scoop scoop-green" style={{ backgroundImage: `url(${chocoball})` }}></div>
-        <div className="scoop scoop-berry"></div>
+        <div className="scoop scoop-berry" style={{ backgroundImage: `url(${vanilla})` }}></div>
       </div>
     </div>
   );
