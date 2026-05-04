@@ -1,5 +1,5 @@
 .navbar {
-    position: fixed;
+  position: fixed;
   width: 90%;
   max-width: 1200px;
   height: 50px;
@@ -162,34 +162,109 @@ nav > div > ul > li:hover ul {
   object-fit: cover;
 }
 
+.navbar-toggle {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .navbar {
     width: 95%;
     height: 40px;
   }
 
+  .navbar .container {
+    position: absolute;
+    top: 62px;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+    padding: 18px 14px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    background: rgba(229, 211, 179, 0.95);
+    border-radius: 24px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.25s ease;
+  }
+
+  .navbar.open .container {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
   .navbar ul {
+    width: 100%;
+    height: auto;
+    display: flex;
     flex-direction: column;
     gap: 8px;
   }
 
-  .navbar li {
+  .navbar li,
+  .navbar li:first-child,
+  .navbar li:last-child {
+    width: 100%;
+    margin: 0;
     justify-content: center;
   }
 
-  .navbar li:first-child,
-  .navbar li:last-child {
-    margin: 0;
+  .navbar li a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-radius: 18px;
+  }
+
+  .nav-link {
+    color: #111;
   }
 
   .navbar-brand {
-    width: 70px;
-    height: 70px;
-    top: 0.1em;
-    right: 0.5em;
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .navbar-brand > img {
-    width: 72.5px;
+    width: 74px;
+    height: 74px;
+  }
+
+  .navbar-brand::before {
+    inset: -8px;
+  }
+
+  .navbar-toggle {
+    display: flex;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 36px;
+    height: 36px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+    background: rgba(128, 71, 28, 0.85);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1001;
   }
 }

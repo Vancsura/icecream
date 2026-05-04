@@ -16,7 +16,7 @@
 
   filter: blur(8px) brightness(1.2) opacity(0.7);
   transform: scale(1);
-  animation: slowZoom 30s ease-in-out infinite;
+  animation: slowZoom 20s ease-in-out infinite;
 }
 
 .ersekcsanad-content {
@@ -27,17 +27,24 @@
   justify-content: center;
 
   min-height: 100vh;
-  padding: 120px 20px 60px;
+  padding: 0;
 }
 
 .ersekcsanad-inner {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
+}
+
+.hero-carousel-section {
+  position: relative;
+  width: 100%;
+  height: 100h;
+  overflow: hidden;
 }
 
 .first-text,
@@ -47,44 +54,70 @@
 }
 
 .ersekcsanad-carousel {
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+  width: 100%;
+  max-width: none;
+  height: 100vh;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .ersekcsanad-carousel img {
   width: 100%;
-  height: auto;
+  height: 100vh;
+  object-fit: cover;
   display: block;
 }
 
 .first-text {
-  margin-top: 20px;
-  position: relative;
-  padding: 20px;
-  letter-spacing: 1px;
-  color: #111;
-  margin-bottom: 20px;
-  background-color: #d4f4cd;
-  text-align: center;
-  border-radius: 30px 0 30px 0;
-  overflow: visible;
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+
+  width: 100%;
   max-width: none;
-  max-height: 286px;
+  height: 100%;
+
+  margin: 0;
+  padding: 40px 6vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  background: transparent;
+  pointer-events: none;
 }
 
-p {
+.first-text h1,
+.first-text p {
+  background: rgba(212, 244, 205, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+
+  border-radius: 30px 0 30px 0;
+}
+
+.first-text h1 {
+  margin-top: 40px;
+  padding: 18px 32px;
+  font-family: "Dancing Script", cursive;
+}
+
+.first-text p {
+  margin-bottom: 70px;
+  padding: 18px 28px;
+  max-width: 900px;
+
   font-family: "Dancing Script", cursive;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
   color: #333;
-  padding: 15px;
-}
-
-.first-text h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: 56px;
 }
 
 .second-text {
@@ -244,7 +277,13 @@ p {
 
 @media (max-width: 768px) {
   .ersekcsanad-content {
-    padding: 90px 15px;
+    padding: 60px 15px;
+  }
+
+  .hero-carousel-section,
+  .ersekcsanad-carousel,
+  .ersekcsanad-carousel img {
+    height: 100vh;
   }
 
   .first-text,
@@ -253,10 +292,19 @@ p {
   }
 
   .first-text {
-    padding: 5px;
-    font-size: 20px;
+    padding: 25px 16px;
     border-radius: 20px 0 20px 0;
     max-height: none;
+  }
+
+  .first-text h1 {
+    font-size: 38px;
+    margin-top: 0;
+  }
+
+  .first-text p {
+    font-size: 20px;
+    margin-bottom: 90px;
   }
 
   .flavours-slider {

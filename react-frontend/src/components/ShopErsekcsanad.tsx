@@ -1,34 +1,34 @@
-import { useEffect, useRef } from 'react';
-import CsanadCarousel from './CsanadCarousel';
+import { useEffect, useRef } from "react";
+import CsanadCarousel from "./CsanadCarousel";
 //@ts-ignore
-import bgImage from '../css/img/csanad_shop.jpg';
+import bgImage from "../css/img/csanad_shop.jpg";
 //@ts-ignore
-import pastel from '../css/img/pastel.jpg';
+import pastel from "../css/img/pastel.jpg";
 //@ts-ignore
-import kinder from '../css/img/kinder-b.jpg';
+import kinder from "../css/img/kinder-b.jpg";
 //@ts-ignore
-import snickers from '../css/img/snickers.jpg';
+import snickers from "../css/img/snickers.jpg";
 //@ts-ignore
-import pokemon from '../css/img/pokemon.jpg';
+import pokemon from "../css/img/pokemon.jpg";
 //@ts-ignore
-import raffa from '../css/img/raffa.jpg';
+import raffa from "../css/img/raffa.jpg";
 //@ts-ignore
-import erdei from '../css/img/tejszínes-erdei.jpg';
+import erdei from "../css/img/tejszínes-erdei.jpg";
 //@ts-ignore
-import csokis_k from '../css/img/csokis-k.jpg';
+import csokis_k from "../css/img/csokis-k.jpg";
 //@ts-ignore
-import almas from '../css/img/almas.jpg';
+import almas from "../css/img/almas.jpg";
 //@ts-ignore
-import dubai from '../css/img/dubai.jpg';
+import dubai from "../css/img/dubai.jpg";
 //@ts-ignore
-import sarkany from '../css/img/sarkany.jpg';
+import sarkany from "../css/img/sarkany.jpg";
 //@ts-ignore
-import malnas from '../css/img/malnas-mag.jpg';
+import malnas from "../css/img/malnas-mag.jpg";
 //@ts-ignore
-import mak from '../css/img/mak.jpg';
+import mak from "../css/img/mak.jpg";
 //@ts-ignore
-import chocoball from '../css/img/chocoball.jpeg';
-import '../css/shopErsekcsanad.css';
+import chocoball from "../css/img/chocoball.jpeg";
+import "../css/shopErsekcsanad.css";
 
 export default function ShopErsekcsanad() {
   const sliderRef = useRef<HTMLDivElement | null>(null);
@@ -126,18 +126,19 @@ export default function ShopErsekcsanad() {
 
       <div className="ersekcsanad-content">
         <div className="ersekcsanad-inner">
+          <div className="hero-carousel-section">
+            <div className="ersekcsanad-carousel">
+              <CsanadCarousel />
+            </div>
 
-          <div className="first-text">
-            <h1>Köszöntünk a Sill fagyizó weboldalán.</h1>
-            <p>
-              Az idei évben is új ízekkel és változatos kínálattal várunk minden
-              kedves vendéget!
-              Fagylaltjainkkal már Baján, Érsekcsanádon, Vaskúton, Sükösdön és Dusnokon is találkozhattok!
-            </p>
-          </div>
-
-          <div className="ersekcsanad-carousel">
-            <CsanadCarousel />
+            <div className="first-text">
+              <h1>Köszöntünk a Sill fagyizó weboldalán.</h1>
+              <p>
+                Az idei évben is új ízekkel és változatos kínálattal várunk
+                minden kedves vendéget! Fagylaltjainkkal már Baján,
+                Érsekcsanádon, Vaskúton, Sükösdön és Dusnokon is találkozhattok!
+              </p>
+            </div>
           </div>
 
           <div className="second-text mt-4">
@@ -146,40 +147,76 @@ export default function ShopErsekcsanad() {
 
           <div className="flavours-slider" ref={sliderRef}>
             <div className="flavours-track" ref={trackRef}>
-              <div className="flavour-card pastel" style={{ backgroundImage: `url(${pastel})` }}>
+              <div
+                className="flavour-card pastel"
+                style={{ backgroundImage: `url(${pastel})` }}
+              >
                 <h3>Pastel de nata</h3>
               </div>
-              <div className="flavour-card apple" style={{ backgroundImage: `url(${almas})` }}>
+              <div
+                className="flavour-card apple"
+                style={{ backgroundImage: `url(${almas})` }}
+              >
                 <h3>Almáspite</h3>
               </div>
-              <div className="flavour-card cherry" style={{ backgroundImage: `url(${mak})` }}>
+              <div
+                className="flavour-card cherry"
+                style={{ backgroundImage: `url(${mak})` }}
+              >
                 <h3>Meggyes-mákos</h3>
               </div>
-              <div className="flavour-card choco" style={{ backgroundImage: `url(${pokemon})` }}>
+              <div
+                className="flavour-card choco"
+                style={{ backgroundImage: `url(${pokemon})` }}
+              >
                 <h3>Pokemon</h3>
               </div>
-              <div className="flavour-card choco" style={{ backgroundImage: `url(${erdei})` }}>
+              <div
+                className="flavour-card choco"
+                style={{ backgroundImage: `url(${erdei})` }}
+              >
                 <h3>Tejszínes-erdeigyümölcsös</h3>
               </div>
-              <div className="flavour-card choco" style={{ backgroundImage: `url(${raffa})` }}>
+              <div
+                className="flavour-card choco"
+                style={{ backgroundImage: `url(${raffa})` }}
+              >
                 <h3>Raffaello</h3>
               </div>
-              <div className="flavour-card choco" style={{ backgroundImage: `url(${snickers})` }}>
+              <div
+                className="flavour-card choco"
+                style={{ backgroundImage: `url(${snickers})` }}
+              >
                 <h3>Snickers</h3>
               </div>
-              <div className="flavour-card choco" style={{ backgroundImage: `url(${kinder})` }}>
+              <div
+                className="flavour-card choco"
+                style={{ backgroundImage: `url(${kinder})` }}
+              >
                 <h3>Kinder bueno</h3>
               </div>
-              <div className="flavour-card choco" style={{ backgroundImage: `url(${csokis_k})` }}>
+              <div
+                className="flavour-card choco"
+                style={{ backgroundImage: `url(${csokis_k})` }}
+              >
                 <h3>Csokis keksz</h3>
               </div>
-              <div className="flavour-card choco" style={{ backgroundImage: `url(${dubai})` }}>
+              <div
+                className="flavour-card choco"
+                style={{ backgroundImage: `url(${dubai})` }}
+              >
                 <h3>Dubai csokis</h3>
               </div>
-              <div className="flavour-card choco" style={{ backgroundImage: `url(${malnas})` }}>
+              <div
+                className="flavour-card choco"
+                style={{ backgroundImage: `url(${malnas})` }}
+              >
                 <h3>Málnás magnum</h3>
               </div>
-              <div className="flavour-card choco" style={{ backgroundImage: `url(${sarkany})` }}>
+              <div
+                className="flavour-card choco"
+                style={{ backgroundImage: `url(${sarkany})` }}
+              >
                 <h3>Sárkánygyümölcs</h3>
               </div>
             </div>
@@ -190,7 +227,10 @@ export default function ShopErsekcsanad() {
         <div className="scoop scoop-pink"></div>
         <div className="scoop scoop-vanilla"></div>
         <div className="scoop scoop-choco"></div>
-        <div className="scoop scoop-green" style={{ backgroundImage: `url(${chocoball})` }}></div>
+        <div
+          className="scoop scoop-green"
+          style={{ backgroundImage: `url(${chocoball})` }}
+        ></div>
         <div className="scoop scoop-berry"></div>
       </div>
     </div>
