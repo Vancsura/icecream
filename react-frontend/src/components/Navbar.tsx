@@ -12,18 +12,15 @@ export default function Navbar() {
       </Link>
       <div className="container">
         <ul>
-          <CustomLink className="nav-link" to="">
+          <a className="nav-link mx-6" href="#sill_baja">
             Baja
-          </CustomLink>
-          <CustomLink className="nav-link mx-6" to="">
+          </a>
+           <a className="nav-link mx-6" href="#sill_csanad">
             Érsekcsanád
-          </CustomLink>
+          </a>
         </ul>
 
         <ul>
-          <CustomLink className="nav-link mx-6" to="">
-            Sükösd
-          </CustomLink>
           <CustomLink className="nav-link mx-6" to="">
             Dusnok
           </CustomLink>

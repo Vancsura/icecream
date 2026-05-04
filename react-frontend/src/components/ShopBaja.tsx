@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 // @ts-ignore
 import cuki from "../css/img/cuki.jpg";
 // @ts-ignore
-import cukimap from "../css/img/cukimap.jpg";
-// @ts-ignore
 import sillLogo from "../css/img/csanad_logo.jpg";
-// @ts-ignore
-import sillMap from "../css/img/sillbajamap.jpg";
 // @ts-ignore
 import cake from "../css/img/cake.jpg";
 
@@ -47,9 +43,6 @@ export default function ShopBaja() {
             className="col m-3"
             to="https://maps.app.goo.gl/Qz33C7dSaDc6Peav6"
           >
-            <div className="image-container mb-2">
-              <img src={sillMap} alt="Fagylalt" />
-            </div>
           </Link>
         </div>
       </div>
@@ -78,9 +71,6 @@ export default function ShopBaja() {
           className="col m-3"
           to="https://maps.app.goo.gl/ULfwUnyb1FForqQ28"
         >
-          <div className="image-container mb-2">
-            <img src={cukimap} alt="Fagylalt" />
-          </div>
         </Link>
       </div>
     </div>
